@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixa</title>
+    <style>
+        h1 {
+            background-color: lightgreen;
+            height: 300px;
+            width: 300px;
+
+            /* usamos SHORTHANDS para simplificar */
+
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: gray; */
+            border: 10px solid gray;
+
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+            /* de cima para o SENTIDO HORÁRIO! */
+            /* padding: 10px 10px 10px 10px; */
+            padding: 10px; /* simplificado ainda mais quando todos os valores FOREM IGUAIS */
+            /* ou pode colocar apenas dois valores = cima/baixo ,esquerda/direita */
+
+            /* margin: auto; alinha a caixa horizontalmente */
+
+            /*margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;*/
+            margin: 10px auto 50px auto; /* centralizado */
+
+            /* outline = tracejado que fica dentro da margem */
+            /*outline: 10px;
+            outline-color: blueviolet;
+            outline-style: dashed;*/
+            outline: 10px dashed salmon;
+        }
+        a {
+            border-width: 10px;
+            border-style: dashed;
+            border-color: red;
+
+            padding: 10px;
+
+            /* display: block; é possível alterar o TIPO DE CAIXA de um elemento! */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de <strong>box-level</strong>, mas os <a href="caixa01.html" target="_self">links</a> são exemplos de inline-box. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
